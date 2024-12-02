@@ -25,9 +25,12 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
 
-@RequiredArgsConstructor()
 public class InventoryClearedEvent extends Event
 {
+	public InventoryClearedEvent(Player player, CommandSender sender) {
+		this.player = player;
+		this.sender = sender;
+	}
 	/**
 	 * The player whose inventory has been cleared.
 	 */

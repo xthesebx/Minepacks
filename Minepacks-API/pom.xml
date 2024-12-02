@@ -6,7 +6,7 @@
 		<artifactId>Minepacks-Parent</artifactId>
 		<groupId>at.pcgamingfreaks</groupId>
 		<version>${revision}</version>
-		<relativePath>..</relativePath>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<version>${revision}</version>
 	<packaging>jar</packaging>
@@ -38,24 +38,6 @@
 						<goals>
 							<goal>jar</goal>
 						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<!-- Creates a jar with the javadoc (for maven repo) -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.1.1</version>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-						<configuration>
-							<additionalparam>-Xdoclint:none</additionalparam>
-							<source>8</source>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>

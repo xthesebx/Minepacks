@@ -27,10 +27,23 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
 
-@RequiredArgsConstructor()
 public class InventoryClearEvent extends Event implements Cancellable
 {
+	public InventoryClearEvent(Player player, CommandSender sender) {
+		this.player = player;
+		this.sender = sender;
+	}
 	@Getter @Setter private boolean cancelled = false;
+
+	@Override
+	public boolean isCancelled() {
+		return cancelled;
+	}
+
+	@Override
+	public void setCancelled(boolean cancelled) {
+		this.cancelled = cancelled;
+	}
 
 	/**
 	 * The player whose inventory should be cleared.

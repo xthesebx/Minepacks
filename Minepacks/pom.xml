@@ -6,7 +6,7 @@
 		<artifactId>Minepacks-Parent</artifactId>
 		<groupId>at.pcgamingfreaks</groupId>
 		<version>${revision}</version>
-		<relativePath>..</relativePath>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<version>${revision}</version>
 	<packaging>jar</packaging>

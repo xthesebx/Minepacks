@@ -129,12 +129,12 @@ public class Minepacks extends JavaPlugin implements MinepacksPlugin, IPlugin
 			getLogger().warning("Paper support is experimental! Use at your own risk!");
 			getLogger().warning("No guarantee for data integrity! Backup constantly!");
 		}
-		if (MCVersion.is(MCVersion.UNKNOWN) || !MCVersion.isUUIDsSupportAvailable() || MCVersion.isNewerThan(MCVersion.MC_NMS_1_21_R1))
+		/*if (MCVersion.is(MCVersion.UNKNOWN) || !MCVersion.isUUIDsSupportAvailable() || MCVersion.isNewerThan(MCVersion.MC_NMS_1_21_R1))
 		{
 			this.warnOnVersionIncompatibility();
 			this.setEnabled(false);
 			return false;
-		}
+		}*/
 		return true;
 	}
 

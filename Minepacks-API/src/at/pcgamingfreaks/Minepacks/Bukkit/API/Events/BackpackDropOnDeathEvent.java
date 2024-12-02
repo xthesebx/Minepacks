@@ -31,7 +31,18 @@ import org.jetbrains.annotations.NotNull;
  */
 public class BackpackDropOnDeathEvent extends Event implements Cancellable
 {
-	@Getter @Setter private boolean cancelled = false;
+	private boolean cancelled = false;
+
+	@Override
+	public boolean isCancelled() {
+		return cancelled;
+	}
+
+	@Override
+	public void setCancelled(boolean cancelled) {
+		this.cancelled = cancelled;
+	}
+
 	@Getter private final Player owner;
 	@Getter private final Backpack backpack;
 

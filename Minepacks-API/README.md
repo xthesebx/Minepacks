@@ -11,7 +11,7 @@
 <!-- End of variables block -->
 
 [![Logo][banner]][spigot]
-
+_
 This branch holds the API for the Minepacks plugin.
 
 [![ciImg]][ci] [![apiVersionImg]][apiJavaDoc] [![licenseImg]][license]

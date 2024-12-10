@@ -29,6 +29,7 @@ import org.jetbrains.annotations.Nullable;
 public interface MinepacksPlugin
 {
 	/**
+	 * run workflow
 	 * Gets the instance of the minepacks plugin.
 	 * WARNING use this function at your own risk! If the plugin is not installed the MinepacksPlugin class will be unknown!
 	 *

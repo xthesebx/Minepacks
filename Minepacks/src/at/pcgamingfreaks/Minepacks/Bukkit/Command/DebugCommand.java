@@ -30,7 +30,6 @@ import at.pcgamingfreaks.Minepacks.Bukkit.API.MinepacksCommand;
 import at.pcgamingfreaks.Minepacks.Bukkit.Minepacks;
 import at.pcgamingfreaks.Minepacks.Bukkit.Permissions;
 
-import org.apache.commons.lang.exception.ExceptionUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
@@ -245,7 +244,7 @@ public class DebugCommand extends MinepacksCommand
 		public void setCancelled(boolean toCancel)
 		{
 			super.setCancelled(toCancel);
-			writer.append(ExceptionUtils.getStackTrace(new Exception("Click event has been canceled!!!")));
+			writer.append((new Exception("Click event has been canceled!!!")).getMessage());
 			writer.append("\n\n");
 		}
 	}
